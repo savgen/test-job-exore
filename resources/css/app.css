@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    @apply min-h-screen;
+}
+
+.base-container{
+    @apply flex flex-col min-h-screen;
+}
+
+.header-container{
+    @apply bg-gray-800 p-4 flex items-center justify-between text-white;
+}
+
+.logo{
+    @apply uppercase text-xl font-bold;
+}
+
+.navigation{
+    @apply flex items-center text-sm text-white;
+}
+.navigation .box{
+    @apply mr-4;
+}
+
+.auth-button{
+    @apply flex items-center text-sm;
+}
+.auth-button .box{
+    @apply px-1;
+}
+.auth-button .box:last-child{
+    @apply pr-0;
+}
+
+.link-default{
+    @apply flex items-center;
+}
+.link-default div:first-child i{
+    @apply pr-1;
+}
+
+.button-default{
+    @apply flex items-center w-full px-4 py-2 rounded bg-gray-300 justify-center text-white font-bold;
+}
+.button-default div:first-child i{
+    @apply pr-1;
+}
+
+.green{
+    @apply bg-green-500;
+}
+.blue{
+    @apply bg-blue-600;
+}
+.red{
+    @apply bg-red-500;
+}
+
+.content-container{
+    @apply flex-1 bg-gray-100 p-4 flex justify-center;
+}
+
+.main-page{
+    @apply flex flex-col;
+    width: 680px;
+}
+
+.pagination{
+    @apply flex items-center;
+}
+.pagination .page-item{
+    @apply bg-white mr-1 rounded px-4 py-2;
+}
+.pagination .page-item.active{
+    @apply bg-green-200;
+}
+
+.card-header{
+    @apply mb-4 font-bold text-lg;
+}
+
+.footer-container{
+    @apply bg-gray-800 p-4 flex items-center justify-end text-sm text-white;
+}
